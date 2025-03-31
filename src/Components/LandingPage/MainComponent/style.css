@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-   padding-bottom: 10rem;
+    padding-bottom: 10rem;
+    overflow-x: hidden;
+   
 }
 
 .left-component{
@@ -53,8 +55,6 @@
 .phone-container{
     width: 50%;
     position: relative;
-    
-
 }
 
 .iphone{
@@ -77,6 +77,8 @@
 }
 
 @media only screen and (max-width: 1250px){
+
+  
     .track-crypto-heading,
     .real-time-heading{
     font-size: 6rem;
@@ -102,14 +104,15 @@
     .flex-info{
        flex-direction: column;
        justify-content: center;
-    
        
+       padding-top: 0;
     }
 
     .phone-container{
         display: block;
         margin-top: 3rem;
         margin-left: 4.2rem;
+        height: 20rem;
     }
 
     .iphone{
@@ -131,12 +134,14 @@
     padding-right: 7rem;
     margin-left: 5px;
     
+    
     }
     
     .info-text{
         text-align: center;
         padding-right: 7rem;
         margin-left: 5px;
+        caret-color: transparent;
     }
 
     .btn-flex{
@@ -173,3 +178,4 @@
     }
 }
 
+  

@@ -1,8 +1,5 @@
+
 .list-row{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.5rem;
     margin: 1rem;
     padding: 1rem;
     border-radius: 1rem;
@@ -14,8 +11,18 @@
 }
 
 .list-row td{
+    padding: 0.5rem; 
     text-align: left;
     width: 18%;
+}
+
+.td-icon {
+    width: 1.5rem; /* Set fixed width */
+    height: 1.5rem; /* Set fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Prevents shrinking */
 }
 
 .td-image{
@@ -34,30 +41,18 @@
 .mobile-td-mkt{
     display: none;
 }
-
 @media only screen and (max-width: 1200px) {
     .td-icon{
         display: none;
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    .td-total-volume{
-       display: none;
-    }
-}
+
 
 @media only screen and (max-width: 960px) {
 
-    
-    .desktop-td-mkt{
-       display: none;
-       
-    }
-
-    .mobile-td-mkt{
-        display: block;
-       
+    .list-row td{
+        gap: 3rem;
     }
 
     .coin-logo{
@@ -65,13 +60,7 @@
         height: 2rem;
     }
 
-    .name-col {
-        display: flex;
-        align-items: left; 
-        justify-content: start; 
-        margin: auto;
-    }
-
+   
     .coin-symbol,
     .coin-name,
     .price-chip,
@@ -82,21 +71,73 @@
        
     }
 
-    .coin-price-parent{
-        display: flex;
-        align-items: left;
-    }
-
-   .chip-flex{
-    display: flex;
-    align-items: left; 
-    justify-content: start;
-    margin: auto;
-   }
-
-    
-    
-
     
 }
+
+@media only screen and (max-width: 830px) {
+    .td-total-volume{
+       display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .desktop-td-mkt{
+        display: none;
+    }
+
+    .mobile-td-mkt{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+    .coin-symbol,
+    .coin-name,
+    .price-chip,
+    .coin-price{
+        font-size: x-small;
+        margin-left: 2px;
+        padding: 1px 3px;
+       
+    }
+
+}
+
+@media only screen and (max-width: 520px) {
+
+    .mobile-td-mkt{
+        display: none;
+    }
+
+    .coin-symbol,
+    .coin-name,
+    .price-chip,
+    .coin-price{
+        font-size: x-small;
+        margin-left: 2px;
+        padding: 1px 3px;
+       
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+
+    .coin-logo{
+        width: 1.5rem !important;
+        height: 1.5rem;
+    }
+    .coin-symbol,
+    .coin-name,
+    .price-chip,
+    .coin-price{
+        font-size: x-small;
+        margin-left: 1px;
+        padding: 1px 1px;
+    }
+}
+
+
 

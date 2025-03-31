@@ -5,6 +5,8 @@ import iphone from "../../../assets/iphone.png"
 import gradient from "../../../assets/gradient.png"
 import {motion} from "framer-motion"
 import { duration } from '@mui/material';
+import { Link } from 'react-router-dom';
+
 
 function MainComponent() {
   return (
@@ -43,7 +45,7 @@ function MainComponent() {
              animate={{opacity: 1, x: 0}}
              transition={{duration: 0.5, delay: 1.5}}
             >
-                <Button text="Dashboard"/>
+               <Link to ="/dashboard"> <Button text="Dashboard"/> </Link>
                 <Button text="share" outlined={true}/>
             </motion.div>
 
@@ -64,6 +66,7 @@ function MainComponent() {
             />
             <img src={gradient} className='gradient' />
         </div>
+       
     </div>
   )
 }

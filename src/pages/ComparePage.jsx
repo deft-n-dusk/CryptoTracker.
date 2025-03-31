@@ -71,8 +71,13 @@ function ComparePage() {
   
 
   useEffect(() => {
-    getData();
-  }, []);
+    
+    const timeout = setTimeout(() => {
+      getData();
+  }, 800); // 800ms delay to reduce frequent requests
+
+  return () => clearTimeout(timeout); 
+  }, [crypto1, crypto2, days, priceType]);
 
   async function getData() {
     setIsLoading(true);

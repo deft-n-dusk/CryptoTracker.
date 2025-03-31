@@ -22,8 +22,7 @@ function SelectCoins({crypto1, crypto2, handleCoinChange}) {
             "&& fieldset": {
              borderColor: "#3a80e9",
                },
-           },
-      
+           }, 
     }
 
    
@@ -36,18 +35,16 @@ function SelectCoins({crypto1, crypto2, handleCoinChange}) {
       const myCoins = await get100Coins();
       setAllCoins(myCoins);
     }
-
-
-  return (
+ return(
     <div className='coins-flex'>
       <p>Crypto 1</p>
          <Select
         sx={styles}
-          value={crypto1}
+        value={allCoins.some((coin) => coin.id === crypto1) ? crypto1 : ""}
           label="Crypto 1"
           onChange={(event) => handleCoinChange(event, false)}
         >
-          {allCoins
+          {(allCoins || [])
           .filter((item) => item.id !== crypto2)
           .map((coin, i) => (
             <MenuItem key={i} value={coin.id}>{coin.name}</MenuItem>
@@ -57,14 +54,14 @@ function SelectCoins({crypto1, crypto2, handleCoinChange}) {
         <p>Crypto 2</p>
          <Select
         sx={styles}
-          value={crypto2}
+          value={allCoins.some((coin) => coin.id === crypto2) ? crypto2 : ""}
           label="Crypto 2"
           onChange={(event) => handleCoinChange(event, true)}
         >
           {allCoins
           .filter((item) => item.id != crypto1)
           .map((coin) => (
-            <MenuItem value={coin.id}>{coin.name}</MenuItem>
+            <MenuItem key={coin.id} value={coin.id}>{coin.name}</MenuItem>
           ))}
         </Select>
 

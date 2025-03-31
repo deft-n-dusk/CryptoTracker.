@@ -75,7 +75,6 @@ const handleDaysChange = async (event) => {
       settingChartData(setChartData, prices)
        setIsLoading(false);
     }
-    
   };
 
 
@@ -87,8 +86,10 @@ const handleDaysChange = async (event) => {
             <Loader/> 
             ) : (
                 <>
+
+
                 <div className='grey-wrapper' style={{padding: "0rem 1rem"}}>
-                     <List coin={coinData}/>
+                     <List coin={coinData} /> 
                 </div>
                 <div className='grey-wrapper'>
                      <SelectDays days={days} handleDaysChange={handleDaysChange}/>
