@@ -4,12 +4,15 @@
     align-items: flex-start;
     padding-bottom: 10rem;
     overflow-x: hidden;
+    
    
 }
 
 .left-component{
     padding-left: 3rem;
+    width: 58rem;
 }
+
 
 .track-crypto-heading,
 .real-time-heading{
@@ -84,7 +87,7 @@
     font-size: 6rem;
     margin: 0;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 }
 
@@ -104,7 +107,6 @@
     .flex-info{
        flex-direction: column;
        justify-content: center;
-       
        padding-top: 0;
     }
 
