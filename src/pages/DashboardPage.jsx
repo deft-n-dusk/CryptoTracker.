@@ -6,7 +6,6 @@ import TabsComponent from '../Components/Dashboard/TabsComponent'
 import Search from '../Components/Dashboard/Search';
 import PaginationComponent from '../Components/Dashboard/Pagination';
 import Loader from '../Components/Common/Loader';
-import { motion } from "framer-motion";
 import BackToTop from '../Components/Common/BackToTop';
 import { get100Coins } from '../functions/get100Coins';
 import Footer from '../Components/Common/Footer';
