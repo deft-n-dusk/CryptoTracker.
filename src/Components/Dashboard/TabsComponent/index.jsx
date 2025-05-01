@@ -8,7 +8,7 @@ import TabPanel from '@mui/lab/TabPanel';
 import { color } from 'framer-motion';
 import { createTheme } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';
-import { div, img, p, table } from 'framer-motion/client';
+import { div, img, p, table } from 'framer-motion';
 import Grid from '../Grid';
 import List from '../List';
 import "./style.css"

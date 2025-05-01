@@ -1,4 +1,4 @@
-import { label } from "framer-motion/client";
+import { label } from "framer-motion";
 import { convertDate } from "./convertDate";
 
 export const settingChartData = (setChartData, prices1, prices2) => {

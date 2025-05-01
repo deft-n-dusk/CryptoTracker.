@@ -7,7 +7,7 @@ import { coinObject } from '../functions/convertObject';
 import Header from '../Components/Common/Header';
 import { getCoinData } from '../functions/getCoinData';
 import { getCoinPrices } from '../functions/getCoinPrices';
-import { div } from 'framer-motion/client';
+import { div } from 'framer-motion';
 import CoinInfo from '../Components/Coin/CoinInfo';
 import LineChart from '../Components/Coin/LineChart';
 import { convertDate } from '../functions/convertDate';
