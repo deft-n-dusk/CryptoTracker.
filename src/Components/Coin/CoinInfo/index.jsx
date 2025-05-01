@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./style.css"
-import { p, span } from 'framer-motion/client';
+import { p, span } from 'framer-motion';
 
 function CoinInfo({heading, desc}) {
 
