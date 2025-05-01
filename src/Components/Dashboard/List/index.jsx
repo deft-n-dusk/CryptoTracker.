@@ -5,7 +5,7 @@ import TrendingDownIcon from '@mui/icons-material/TrendingDown';
 import { Tooltip } from '@mui/material';
 import { convertNumber } from '../../../functions/convertNumbers';
 import { useNavigate } from "react-router-dom";
-import { tbody } from 'framer-motion';
+
 
 function List({ coin }) {
   const navigate = useNavigate();
