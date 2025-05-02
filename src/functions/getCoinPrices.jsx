@@ -4,7 +4,7 @@ export const getCoinPrices = (id, days, priceType) => {
 
 const prices= axios
     .get(
-        `https://thingproxy.freeboard.io/fetch/https://api.coingecko.com/api/v3/coins/${id}/market_chart?vs_currency=usd&days=${days}&interval=daily`)
+        `https://cryptotrackerbe.netlify.app/.netlify/functions/chart?id=${id}&days=${days}`)
     .then((response) => {
          return response.data[priceType];
         

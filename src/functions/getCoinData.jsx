@@ -3,7 +3,7 @@ import axios from "axios";
 export const getCoinData = (id) => {
 
     const myData=axios
-    .get(`https://thingproxy.freeboard.io/fetch/https://api.coingecko.com/api/v3/coins/${id}`)
+    .get(`https://cryptotrackerbe.netlify.app/.netlify/functions/coin?id=${id}`)
     .then((response) => {
         return response.data;
     })
